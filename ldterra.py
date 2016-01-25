@@ -3,7 +3,7 @@ from terra_server import app
 import sys
 
 app_port = 80
-app_ip = '52.28.0.123'
+app_ip = '172.31.24.202'
 app_debug = False
 
 amount_args = len(sys.argv)
