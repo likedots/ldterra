@@ -12,7 +12,7 @@ def index():
 def get_abs_path():
     abs_path = os.path.dirname(os.path.abspath(__file__))
     current_folder = '/' + os.path.basename(abs_path)
-    abs_path = abs_path[0:] + abs_path[:len(abs_path)-len(current_folder)]
+    abs_path = abs_path[:len(abs_path)-len(current_folder)]
     return abs_path + '/templates/'
 
 @app.route('/<path:path>/<file>')
